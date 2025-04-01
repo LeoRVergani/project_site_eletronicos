@@ -58,7 +58,7 @@ header a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1450px;
+    width: 1500px;
 }
 
 .banner {
@@ -68,16 +68,22 @@ header a:hover {
     width: 1449px;
     margin: auto;
     padding: 20px;
+    margin-top: 25px;
     font-size: 20px;
 }
 .produtos {
     display: flex;
     flex: 1;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
 }
+
+.produto:hover {
+    border: var(--cor1) solid 3px;
+}
+
 .produto {
     display: flex;
     flex-direction: column;
@@ -125,6 +131,9 @@ footer {
         height: 216px;
         width: 1018px;
     }
+    .logo {
+        width: 1050px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -134,6 +143,9 @@ footer {
         margin-top: 25px;
         height: 216px;
         width: 783px;
+    }
+    .logo {
+        width: 800px;
     }
 }
 
@@ -146,6 +158,9 @@ footer {
     }
     body {
         height: 100%;
+    }
+    .logo {
+        width: 800px;
     }
 }
 
@@ -161,6 +176,9 @@ footer {
     }
     body {
         height: 100%;
+    }
+    .logo {
+        width: 500px;
     }
 }
 
