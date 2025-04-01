@@ -1,26 +1,61 @@
-#CB1F5A
-#36CACC
-#D3CACE
-#21303B
-#327987
+:root {
+    --cor1: #CB1F5A;
+    --cor2: #36CACC;
+    --cor3: #D3CACE;
+    --cor4: #21303B;
+    --cor5: #327987;
+}
 
 
 body {
     font-family: Arial, sans-serif;
+    background-color: var(--cor5);
     margin: 0;
     padding: 0;
     text-align: center;
 }
 header {
     display: flex;
-    justify-content: space-between;
-    background-color: #21303B;
-    color: white;
+    align-items: center;
+    width: 100%;
+    background-color: var(--cor4);
+    color:var(--cor3);
     padding: 15px;
     font-size: 24px;
+    height: 70px;
 }
+
+header img {
+    border-radius: 100%;
+    width: 100px;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    margin-right: 20px;
+}
+
+header a {
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1450px;
+}
+
 .banner {
-    background-color: #f8f9fa;
+    background-color: var(--cor5);
     padding: 20px;
     font-size: 20px;
 }
@@ -32,7 +67,10 @@ header {
     padding: 20px;
 }
 .produto {
-    border: 1px solid #ddd;
+    border: 1px solid var(--cor4);
+    color: var(--cor4);
+    background-color: var(--cor3);
+    border-radius: 10px;
     padding: 10px;
     width: 200px;
     text-align: center;
