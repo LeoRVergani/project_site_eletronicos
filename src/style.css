@@ -1,0 +1,48 @@
+#CB1F5A
+#36CACC
+#D3CACE
+#21303B
+#327987
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #21303B;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+}
+.banner {
+    background-color: #f8f9fa;
+    padding: 20px;
+    font-size: 20px;
+}
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.produto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+.produto img {
+    width: 100%;
+    height: auto;
+}
+.contato {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 20px;
+}
