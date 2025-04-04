@@ -123,6 +123,31 @@ footer {
     gap: 15px;
 }
 
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    border: var(--cor3) solid 2px;
+}
+
+.contato h2 {
+    width: 100px;
+    border: #21303B solid 2px;
+}
+
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
 @media screen and (max-width: 1550px) {
     .banner {
         background-image: url('./img/banner1024.png');
