@@ -81,7 +81,9 @@ header a:hover {
 }
 
 .produto:hover {
-    border: var(--cor1) solid 3px;
+    background: var(--cor4);
+    color: var(--cor3);
+    filter: grayscale(50%);
 }
 
 .produto {
@@ -89,7 +91,6 @@ header a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid var(--cor4);
     color: var(--cor4);
     background-color: var(--cor3);
     border-radius: 10px;
@@ -97,7 +98,7 @@ header a:hover {
     width: 200px;
     text-align: center;
     height: 250px;
-    box-shadow: 8px 9px 4px -2px rgba(0,0,0,0.81);
+    box-shadow: 4px 4px 12px 1px rgba(33,48,59,1);
 }
 .produto img {
     width: 100%;
@@ -128,16 +129,18 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    height: 300px;
-    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 400px;
+    width: 400px;
     border-radius: 10px;
     border: var(--cor3) solid 2px;
+    gap: 10px;
 }
 
 .contato h2 {
     width: 100px;
-    border: #21303B solid 2px;
+    color: var(--cor3);
 }
 
 #form-contato {
@@ -146,12 +149,28 @@ footer {
     justify-content: center;
     align-items: center;
     width: 200px;
+    color: var(--cor3);
+    gap: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cor3);
+    gap: 20px;
+    width: 1449px;
+    padding: 20px;
+    margin: 40px auto;
+    color: var(--cor4);
+    box-shadow: 4px 4px 12px 1px rgba(33,48,59,1);
 }
 
 @media screen and (max-width: 1550px) {
     .banner {
         background-image: url('./img/banner1024.png');
         background-size: contain;
+        background-repeat: no-repeat;
         margin-top: 25px;
         height: 216px;
         width: 1018px;
@@ -159,18 +178,25 @@ footer {
     .logo {
         width: 1050px;
     }
+    main {
+        width: 1018px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     .banner {
         background-image: url('./img/banner800.png');
         background-size: contain;
+        background-repeat: no-repeat;
         margin-top: 25px;
-        height: 216px;
+        height: 249px;
         width: 783px;
     }
     .logo {
         width: 800px;
+    }
+    main {
+        width: 783px;
     }
 }
 
@@ -178,7 +204,8 @@ footer {
     .banner {
         background-image: url('./img/banner800.png');
         background-repeat: no-repeat;
-        background-size: 800px 249px;
+        background-size: 1024px 249px;
+        height: 249px;
         margin-top: 25px;
     }
     body {
@@ -187,13 +214,17 @@ footer {
     .logo {
         width: 800px;
     }
+    main {
+        width: 800px;
+    }
 }
 
 @media screen and (max-width: 850px) {
     .banner {
         background-image: url('./img/banner500.png');
         background-repeat: no-repeat;
-        background-size: 500px 246px;
+        background-size: 850px 246px;
+        height: 216px;
         margin-top: 25px;
         margin-left: 20%;
         width: 100%;
@@ -205,6 +236,9 @@ footer {
     .logo {
         width: 500px;
     }
+    main {
+        width: 500px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -212,11 +246,15 @@ footer {
         background-image: url('./img/banner500.png');
         background-repeat: no-repeat;
         background-size: 500px 246px;
+        height: 216px;
         margin-top: 25px;
         margin-left: 1%;
         width: 100%;
     }
     body {
         height: 100%;
+    }
+    main {
+        width: 450px;
     }
 }
