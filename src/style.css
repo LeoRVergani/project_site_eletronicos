@@ -20,13 +20,11 @@ body {
 }
 header {
     display: flex;
-    
     background-color: var(--cor4);
     color:var(--cor6);
     font-size: 24px;
     height: 80px;
     border-bottom: var(--cor2) solid 3px;
-    margin-top: auto;
     padding: 20px;
     width: 100%;
 }
@@ -352,6 +350,33 @@ main {
     }
     main {
         width: 80%;
+        margin-top: -55px;
+
+    }
+    .sobre {
+        width: 80%;
+    }
+    .sobre-detalhe {
+        flex-direction: column;
+    }
+    .sobre-detalhe img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .banner {
+        width: 90%;
+    }
+    .logo {
+        width: 25%;
+    }
+    body {
+        height: 90%;
+    }
+    main {
+        width: 80%;
+        margin-top: 10px;
     }
     .sobre {
         width: 80%;
