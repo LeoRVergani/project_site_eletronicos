@@ -356,10 +356,13 @@ main {
 
 @media screen and (max-width: 640px) {
     .banner {
-        width: 90%;
+        display: none;
     }
     .logo {
-        width: 90%;
+        justify-content: center;
+    }
+    .logo img{
+        display: none;
     }
     body {
         height: 100%;
@@ -378,12 +381,14 @@ main {
     .sobre-detalhe img {
         width: 100%;
     }
+    .banner-mobile {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 420px) {
     .banner {
         display: none;
-        width: 90%;
     }
     .logo {
         justify-content: center;
