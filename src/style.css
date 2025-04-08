@@ -393,6 +393,9 @@ main {
         margin-top: 70px;
         margin-bottom: 70px;
     }
+    footer {
+        margin-top: 100px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -436,5 +439,8 @@ main {
         width: 80%;
         margin-top: 70px;
         margin-bottom: 70px;
+    }
+    footer {
+        margin-top: 100px;
     }
 }
