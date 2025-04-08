@@ -9,7 +9,6 @@
     --cor6: #F5F5F5;
 }
 
-
 body {
     display: flex;
     flex-direction: column;
@@ -111,7 +110,7 @@ footer {
     background-color:var(--cor4);
     color: var(--cor3);
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     width: 100%;
     margin-top: auto;
 }
