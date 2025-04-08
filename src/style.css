@@ -2,10 +2,11 @@
 
 :root {
     --cor1: #CB1F5A;
-    --cor2: #2d9b9d;
+    --cor2: #145c6a;
     --cor3: #D3CACE;
     --cor4: #21303B;
     --cor5: #327987;
+    --cor6: #F5F5F5;
 }
 
 
@@ -46,6 +47,7 @@ header li {
 
 header a {
     color: var(--cor3);
+    text-underline-offset: 6px;
     text-decoration: none;
 }
 
@@ -66,9 +68,8 @@ header a:hover {
     background-size: contain;
     height: 216px;
     width: 1449px;
-    margin: auto;
+    margin: 0 auto;
     padding: 20px;
-    margin-top: 25px;
     font-size: 20px;
 }
 .produtos {
@@ -128,19 +129,21 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: var(--cor2);
     align-items: center;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 35px auto;
+    padding: 35px;
     height: 400px;
     width: 400px;
     border-radius: 10px;
-    border: var(--cor3) solid 2px;
+    box-shadow: 4px 4px 12px 1px rgba(33,48,59,1);
     gap: 10px;
 }
 
 .contato h2 {
-    width: 100px;
-    color: var(--cor3);
+    width: 150px;
+    font-size: 20px;
+    color: var(--cor6);
 }
 
 #form-contato {
@@ -148,9 +151,53 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    color: var(--cor3);
+    width: 100%;
+    padding: 10px;
+    color: var(--cor6);
     gap: 10px;
+}
+
+#form-contato div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: auto;
+    gap: 10px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--cor4);
+    color: var(--cor6);
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    border: var(--cor4) solid 1px;
+}
+
+form button:hover {
+    background-color: var(--cor5);
+    border: var(--cor3) solid 1px;
+}
+
+#form-contato input,
+#form-contato textarea {
+    width: 340px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--cor2);
+    background-color:var(--cor6);
+    font-size: 14px;
+    resize: none;
+}
+
+#form-contato input:focus,
+#form-contato textarea:focus {
+    outline: none;
+    border: 2px solid var(--cor1);
 }
 
 main {
@@ -159,102 +206,161 @@ main {
     justify-content: center;
     background-color: var(--cor3);
     gap: 20px;
-    width: 1449px;
+    width: 1410px;
     padding: 20px;
     margin: 40px auto;
     color: var(--cor4);
     box-shadow: 4px 4px 12px 1px rgba(33,48,59,1);
 }
 
-@media screen and (max-width: 1550px) {
+.sobre {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4em;
+    gap: 20px;
+    width: 1410px;
+    padding: 20px;
+    margin: 40px auto;
+}
+
+.sobre h2 {
+    color: var(--cor6);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    color: var(--cor6);
+    margin: 0 auto;
+}
+
+.sobre-detalhe {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.sobre-detalhe-reverso {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0 auto;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1535px) {
     .banner {
-        background-image: url('./img/banner1024.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-top: 25px;
-        height: 216px;
-        width: 1018px;
+        width: 90%;
     }
     .logo {
-        width: 1050px;
+        width: 1045px;
     }
     main {
-        width: 1018px;
+        width: 980px;
+    }
+    .sobre {
+        width: 980px;
+    }
+    .sobre-detalhe {
+        flex-direction: column;
+    }
+    .sobre-detalhe-reverso {
+        flex-direction: column;
+    }
+    .sobre-detalhe-reverso img {
+        width: 65%;
+    }
+    .sobre-detalhe img {
+        width: 65%;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .banner {
-        background-image: url('./img/banner800.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-top: 25px;
-        height: 249px;
-        width: 783px;
+        width: 90%;
     }
     .logo {
-        width: 800px;
+        width: 980px;
     }
     main {
-        width: 783px;
+        width: 980px;
+    }
+    .sobre {
+        width: 980px;
+    }
+    .sobre-detalhe {
+        flex-direction: column;
+    }
+    .sobre-detalhe img {
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .banner {
-        background-image: url('./img/banner800.png');
-        background-repeat: no-repeat;
-        background-size: 1024px 249px;
-        height: 249px;
-        margin-top: 25px;
-    }
-    body {
-        height: 100%;
+        width: 90%;
     }
     .logo {
-        width: 800px;
+        width: 810px;
     }
     main {
-        width: 800px;
+        width: 760px;
+    }
+    .sobre {
+        width: 760px;
+    }
+    .sobre-detalhe {
+        flex-direction: column;
+    }
+    .sobre-detalhe img {
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 995px) {
     .banner {
-        background-image: url('./img/banner500.png');
-        background-repeat: no-repeat;
-        background-size: 850px 246px;
-        height: 216px;
-        margin-top: 25px;
-        margin-left: 20%;
-        width: 100%;
-        right: 500px;
-    }
-    body {
-        height: 100%;
+        width: 90%;
     }
     .logo {
-        width: 500px;
+        width: 90%;
     }
     main {
-        width: 500px;
+        width: 80%;
+    }
+    .sobre {
+        width: 80%;
+    }
+    .sobre-detalhe {
+        flex-direction: column;
+    }
+    .sobre-detalhe img {
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 640px) {
     .banner {
-        background-image: url('./img/banner500.png');
-        background-repeat: no-repeat;
-        background-size: 500px 246px;
-        height: 216px;
-        margin-top: 25px;
-        margin-left: 1%;
-        width: 100%;
+        width: 90%;
+    }
+    .logo {
+        width: 90%;
     }
     body {
         height: 100%;
     }
     main {
-        width: 450px;
+        width: 80%;
+    }
+    .sobre {
+        width: 80%;
+    }
+    .sobre-detalhe {
+        flex-direction: column;
+    }
+    .sobre-detalhe img {
+        width: 100%;
     }
 }
