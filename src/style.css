@@ -248,6 +248,10 @@ main {
     text-align: justify;
 }
 
+.banner-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 1535px) {
     .banner {
         width: 90%;
@@ -273,6 +277,9 @@ main {
     .sobre-detalhe img {
         width: 65%;
     }
+    .banner-mobile {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -293,6 +300,9 @@ main {
     }
     .sobre-detalhe img {
         width: 100%;
+    }
+    .banner-mobile {
+        display: none;
     }
 }
 
@@ -315,6 +325,9 @@ main {
     .sobre-detalhe img {
         width: 100%;
     }
+    .banner-mobile {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 995px) {
@@ -335,6 +348,9 @@ main {
     }
     .sobre-detalhe img {
         width: 100%;
+    }
+    .banner-mobile {
+        display: none;
     }
 }
 
@@ -366,13 +382,20 @@ main {
 
 @media screen and (max-width: 420px) {
     .banner {
+        display: none;
         width: 90%;
     }
     .logo {
-        width: 25%;
+        justify-content: center;
+    }
+    .logo img{
+        display: none;
     }
     body {
         height: 90%;
+    }
+    header {
+        justify-content: center;
     }
     main {
         width: 80%;
@@ -386,5 +409,8 @@ main {
     }
     .sobre-detalhe img {
         width: 100%;
+    }
+    .banner-mobile {
+        display: block;
     }
 }

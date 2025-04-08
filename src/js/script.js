@@ -1,7 +1,7 @@
 function trocarImagem() {
     const imagem = document.getElementById("banner");
 
-    if      (window.innerWidth < 375) { imagem.src = "./src/img/banner320.png";} 
+    if      (window.innerWidth < 320) { imagem.src = "./src/img/banner320.png";} 
     else if (window.innerWidth < 640) { imagem.src = "./src/img/banner320.png";} 
     else if (window.innerWidth < 768) { imagem.src = "./src/img/banner600.png";} 
     else if (window.innerWidth < 1024) { imagem.src = "./src/img/banner-tablet-800.png";} 
