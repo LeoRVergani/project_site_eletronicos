@@ -370,19 +370,26 @@ main {
     main {
         width: 80%;
         margin-top: 10px;
-
     }
     .sobre {
         width: 80%;
+        font-size: 1.1em;
+    }
+    .sobre h2 {
+        font-size: 20px;
     }
     .sobre-detalhe {
         flex-direction: column;
+        line-height: 1.2;
     }
     .sobre-detalhe img {
         width: 100%;
     }
     .banner-mobile {
         display: block;
+    }
+    .contato {
+        width: 80%;
     }
 }
 
@@ -408,14 +415,22 @@ main {
     }
     .sobre {
         width: 80%;
+        font-size: 1.1em;
+    }
+    .sobre h2 {
+        font-size: 20px;
     }
     .sobre-detalhe {
         flex-direction: column;
+        line-height: 1.2;
     }
     .sobre-detalhe img {
         width: 100%;
     }
     .banner-mobile {
         display: block;
+    }
+    .contato {
+        width: 80%;
     }
 }
