@@ -131,11 +131,12 @@ footer {
     align-items: center;
     margin: 35px auto;
     padding: 35px;
-    height: 400px;
     width: 400px;
     border-radius: 3px;
     box-shadow: 4px 4px 12px 1px rgba(33,48,59,1);
     gap: 10px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .contato h2 {
