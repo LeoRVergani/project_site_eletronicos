@@ -91,12 +91,12 @@ header a:hover {
     justify-content: center;
     color: var(--cor4);
     background-color: var(--cor3);
-    border-radius: 10px;
+    border-radius: 3px;
     padding: 10px;
     width: 200px;
     text-align: center;
     height: 250px;
-    box-shadow: 4px 4px 12px 1px rgba(33,48,59,1);
+    box-shadow: 2px 2px 15px -3px rgba(33,48,59,1);
 }
 .produto img {
     width: 100%;
@@ -133,7 +133,7 @@ footer {
     padding: 35px;
     height: 400px;
     width: 400px;
-    border-radius: 10px;
+    border-radius: 3px;
     box-shadow: 4px 4px 12px 1px rgba(33,48,59,1);
     gap: 10px;
 }
@@ -208,7 +208,7 @@ main {
     padding: 20px;
     margin: 40px auto;
     color: var(--cor4);
-    box-shadow: 4px 4px 12px 1px rgba(33,48,59,1);
+    box-shadow: 2px 2px 15px -3px rgba(33,48,59,1);
 }
 
 .sobre {
@@ -388,14 +388,22 @@ main {
     }
     .banner-mobile {
         display: block;
+        margin-top: 10px;
     }
     .contato {
-        width: 80%;
+        width: 240px;
         margin-top: 70px;
         margin-bottom: 70px;
     }
     footer {
         margin-top: 100px;
+    }
+    #form-contato input,
+    #form-contato textarea {
+    width: 210px;
+    }
+    form button {
+        width: 235px;
     }
 }
 
@@ -435,13 +443,21 @@ main {
     }
     .banner-mobile {
         display: block;
+        margin-top: 10px;
     }
     .contato {
-        width: 80%;
+        width: 240px;
         margin-top: 70px;
         margin-bottom: 70px;
     }
     footer {
         margin-top: 100px;
+    }
+    #form-contato input,
+    #form-contato textarea {
+    width: 210px;
+    }
+    form button {
+        width: 235px;
     }
 }
